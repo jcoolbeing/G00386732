@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Delta</ion-title>
+    <ion-back-button></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card color="success">
+    <ion-card-header>
+      <ion-card-subtitle>$DAL</ion-card-subtitle>
+      <ion-card-title>Delta</ion-card-title>
+      <ion-item color="success">${{price}}</ion-item>
+    </ion-card-header>
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card>
+
+<!--I added a green buy and a red sell button to manipulate 
+  deltaShares variable from the ts page by invoking their respective
+  functions.-->
+  <ion-button color="success" (click)=buyDShares()>
+    Buy
+  </ion-button>
+  <ion-button color ="danger" (click)=sellDShares()>
+    Sell
+  </ion-button>
+  <br>
+  <!--Databinding-->
+  <h3>Shares: {{deltaShares}}</h3>
+
+</ion-content>

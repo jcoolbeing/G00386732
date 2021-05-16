@@ -1,0 +1,20 @@
+{
+"stocks": [
+{
+"name": "Tesla",
+"ticker": "TSLA",
+"price": "589.87"},
+{
+"name": "Nio",
+"ticker": "NIO",
+"price": "33.42"},
+{
+"name": "AT&T",
+"ticker": "T",
+"price": "32.24"},
+{
+"name": "Delta",
+"ticker": "DAL",
+"price": "46.31"}
+]
+}

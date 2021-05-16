@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>AT&T</ion-title>
+    <ion-back-button></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card color="danger">
+    <ion-card-header>
+      <ion-card-subtitle>$T</ion-card-subtitle>
+      <ion-card-title>AT&T</ion-card-title>
+      <ion-item color="danger">${{price}}</ion-item>
+    </ion-card-header>
+    
+    <ion-card-content>
+
+    </ion-card-content>
+  </ion-card>
+
+<!--I added a green buy and a red sell button to manipulate 
+  attShares variable from the ts page by invoking their respective
+  functions.-->
+  <ion-button color="success" (click)=buyAShares()>
+    Buy
+  </ion-button>
+  <ion-button color ="danger" (click)=sellAShares()>
+    Sell
+  </ion-button>
+  <br>
+  <!--Databinding-->
+  <h3>Shares: {{attShares}}</h3>
+
+</ion-content>

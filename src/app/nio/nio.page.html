@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Nio</ion-title>
+    <ion-back-button></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card color="primary">
+    <ion-card-header>
+      <ion-card-subtitle>$NIO</ion-card-subtitle>
+      <ion-card-title>Nio</ion-card-title>
+      <ion-item color="primary">${{price}}</ion-item>
+    </ion-card-header>
+  
+    <ion-card-content>
+    </ion-card-content>
+  </ion-card>
+
+<!--I added a green buy and a red sell button to manipulate 
+  nioShares variable from the ts page by invoking their respective
+  functions.-->
+  <ion-button color="success" (click)=buyNShares()>
+    Buy
+  </ion-button>
+  <ion-button color ="danger" (click)=sellNShares()>
+    Sell
+  </ion-button>
+  <br>
+  <!--Databinding-->
+  <h3>Shares: {{nioShares}}</h3>
+
+</ion-content>
